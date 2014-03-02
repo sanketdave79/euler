@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4527541418C34E1F00535B12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527541318C34E1F00535B12 /* Foundation.framework */; };
+		4527541618C34E1F00535B12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527541518C34E1F00535B12 /* CoreGraphics.framework */; };
+		4527541818C34E1F00535B12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527541718C34E1F00535B12 /* UIKit.framework */; };
+		4527541E18C34E1F00535B12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4527541C18C34E1F00535B12 /* InfoPlist.strings */; };
+		4527542018C34E1F00535B12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4527541F18C34E1F00535B12 /* main.m */; };
+		4527542418C34E1F00535B12 /* SDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4527542318C34E1F00535B12 /* SDAppDelegate.m */; };
+		4527542718C34E1F00535B12 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4527542518C34E1F00535B12 /* Main_iPhone.storyboard */; };
+		4527542A18C34E1F00535B12 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4527542818C34E1F00535B12 /* Main_iPad.storyboard */; };
+		4527542D18C34E1F00535B12 /* SDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4527542C18C34E1F00535B12 /* SDViewController.m */; };
+		4527542F18C34E2000535B12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4527542E18C34E2000535B12 /* Images.xcassets */; };
+		4527543618C34E2000535B12 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527543518C34E2000535B12 /* XCTest.framework */; };
+		4527543718C34E2000535B12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527541318C34E1F00535B12 /* Foundation.framework */; };
+		4527543818C34E2000535B12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527541718C34E1F00535B12 /* UIKit.framework */; };
+		4527544018C34E2000535B12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4527543E18C34E2000535B12 /* InfoPlist.strings */; };
+		4527544218C34E2000535B12 /* eulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4527544118C34E2000535B12 /* eulerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4527543918C34E2000535B12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4527540818C34E1F00535B12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4527540F18C34E1F00535B12;
+			remoteInfo = euler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4527541018C34E1F00535B12 /* euler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = euler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4527541318C34E1F00535B12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4527541518C34E1F00535B12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4527541718C34E1F00535B12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4527541B18C34E1F00535B12 /* euler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "euler-Info.plist"; sourceTree = "<group>"; };
+		4527541D18C34E1F00535B12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4527541F18C34E1F00535B12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4527542118C34E1F00535B12 /* euler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "euler-Prefix.pch"; sourceTree = "<group>"; };
+		4527542218C34E1F00535B12 /* SDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDAppDelegate.h; sourceTree = "<group>"; };
+		4527542318C34E1F00535B12 /* SDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
+		4527542618C34E1F00535B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		4527542918C34E1F00535B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		4527542B18C34E1F00535B12 /* SDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDViewController.h; sourceTree = "<group>"; };
+		4527542C18C34E1F00535B12 /* SDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
+		4527542E18C34E2000535B12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4527543418C34E2000535B12 /* eulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4527543518C34E2000535B12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4527543D18C34E2000535B12 /* eulerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eulerTests-Info.plist"; sourceTree = "<group>"; };
+		4527543F18C34E2000535B12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4527544118C34E2000535B12 /* eulerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eulerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4527540D18C34E1F00535B12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4527541618C34E1F00535B12 /* CoreGraphics.framework in Frameworks */,
+				4527541818C34E1F00535B12 /* UIKit.framework in Frameworks */,
+				4527541418C34E1F00535B12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4527543118C34E2000535B12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4527543618C34E2000535B12 /* XCTest.framework in Frameworks */,
+				4527543818C34E2000535B12 /* UIKit.framework in Frameworks */,
+				4527543718C34E2000535B12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4527540718C34E1F00535B12 = {
+			isa = PBXGroup;
+			children = (
+				4527541918C34E1F00535B12 /* euler */,
+				4527543B18C34E2000535B12 /* eulerTests */,
+				4527541218C34E1F00535B12 /* Frameworks */,
+				4527541118C34E1F00535B12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4527541118C34E1F00535B12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4527541018C34E1F00535B12 /* euler.app */,
+				4527543418C34E2000535B12 /* eulerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4527541218C34E1F00535B12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4527541318C34E1F00535B12 /* Foundation.framework */,
+				4527541518C34E1F00535B12 /* CoreGraphics.framework */,
+				4527541718C34E1F00535B12 /* UIKit.framework */,
+				4527543518C34E2000535B12 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4527541918C34E1F00535B12 /* euler */ = {
+			isa = PBXGroup;
+			children = (
+				4527542218C34E1F00535B12 /* SDAppDelegate.h */,
+				4527542318C34E1F00535B12 /* SDAppDelegate.m */,
+				4527542518C34E1F00535B12 /* Main_iPhone.storyboard */,
+				4527542818C34E1F00535B12 /* Main_iPad.storyboard */,
+				4527542B18C34E1F00535B12 /* SDViewController.h */,
+				4527542C18C34E1F00535B12 /* SDViewController.m */,
+				4527542E18C34E2000535B12 /* Images.xcassets */,
+				4527541A18C34E1F00535B12 /* Supporting Files */,
+			);
+			path = euler;
+			sourceTree = "<group>";
+		};
+		4527541A18C34E1F00535B12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4527541B18C34E1F00535B12 /* euler-Info.plist */,
+				4527541C18C34E1F00535B12 /* InfoPlist.strings */,
+				4527541F18C34E1F00535B12 /* main.m */,
+				4527542118C34E1F00535B12 /* euler-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4527543B18C34E2000535B12 /* eulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4527544118C34E2000535B12 /* eulerTests.m */,
+				4527543C18C34E2000535B12 /* Supporting Files */,
+			);
+			path = eulerTests;
+			sourceTree = "<group>";
+		};
+		4527543C18C34E2000535B12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4527543D18C34E2000535B12 /* eulerTests-Info.plist */,
+				4527543E18C34E2000535B12 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4527540F18C34E1F00535B12 /* euler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4527544518C34E2000535B12 /* Build configuration list for PBXNativeTarget "euler" */;
+			buildPhases = (
+				4527540C18C34E1F00535B12 /* Sources */,
+				4527540D18C34E1F00535B12 /* Frameworks */,
+				4527540E18C34E1F00535B12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = euler;
+			productName = euler;
+			productReference = 4527541018C34E1F00535B12 /* euler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4527543318C34E2000535B12 /* eulerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4527544818C34E2000535B12 /* Build configuration list for PBXNativeTarget "eulerTests" */;
+			buildPhases = (
+				4527543018C34E2000535B12 /* Sources */,
+				4527543118C34E2000535B12 /* Frameworks */,
+				4527543218C34E2000535B12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4527543A18C34E2000535B12 /* PBXTargetDependency */,
+			);
+			name = eulerTests;
+			productName = eulerTests;
+			productReference = 4527543418C34E2000535B12 /* eulerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4527540818C34E1F00535B12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Techmentation;
+				TargetAttributes = {
+					4527543318C34E2000535B12 = {
+						TestTargetID = 4527540F18C34E1F00535B12;
+					};
+				};
+			};
+			buildConfigurationList = 4527540B18C34E1F00535B12 /* Build configuration list for PBXProject "euler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4527540718C34E1F00535B12;
+			productRefGroup = 4527541118C34E1F00535B12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4527540F18C34E1F00535B12 /* euler */,
+				4527543318C34E2000535B12 /* eulerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4527540E18C34E1F00535B12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4527542A18C34E1F00535B12 /* Main_iPad.storyboard in Resources */,
+				4527542F18C34E2000535B12 /* Images.xcassets in Resources */,
+				4527542718C34E1F00535B12 /* Main_iPhone.storyboard in Resources */,
+				4527541E18C34E1F00535B12 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4527543218C34E2000535B12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4527544018C34E2000535B12 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4527540C18C34E1F00535B12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4527542018C34E1F00535B12 /* main.m in Sources */,
+				4527542D18C34E1F00535B12 /* SDViewController.m in Sources */,
+				4527542418C34E1F00535B12 /* SDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4527543018C34E2000535B12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4527544218C34E2000535B12 /* eulerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4527543A18C34E2000535B12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4527540F18C34E1F00535B12 /* euler */;
+			targetProxy = 4527543918C34E2000535B12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4527541C18C34E1F00535B12 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4527541D18C34E1F00535B12 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4527542518C34E1F00535B12 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4527542618C34E1F00535B12 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4527542818C34E1F00535B12 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4527542918C34E1F00535B12 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		4527543E18C34E2000535B12 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4527543F18C34E2000535B12 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4527544318C34E2000535B12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4527544418C34E2000535B12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4527544618C34E2000535B12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "euler/euler-Prefix.pch";
+				INFOPLIST_FILE = "euler/euler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4527544718C34E2000535B12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "euler/euler-Prefix.pch";
+				INFOPLIST_FILE = "euler/euler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4527544918C34E2000535B12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/euler.app/euler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "euler/euler-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "eulerTests/eulerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4527544A18C34E2000535B12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/euler.app/euler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "euler/euler-Prefix.pch";
+				INFOPLIST_FILE = "eulerTests/eulerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4527540B18C34E1F00535B12 /* Build configuration list for PBXProject "euler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4527544318C34E2000535B12 /* Debug */,
+				4527544418C34E2000535B12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4527544518C34E2000535B12 /* Build configuration list for PBXNativeTarget "euler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4527544618C34E2000535B12 /* Debug */,
+				4527544718C34E2000535B12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4527544818C34E2000535B12 /* Build configuration list for PBXNativeTarget "eulerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4527544918C34E2000535B12 /* Debug */,
+				4527544A18C34E2000535B12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4527540818C34E1F00535B12 /* Project object */;
+}
