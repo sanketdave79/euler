@@ -27,7 +27,10 @@
     int answer;
     NSLog(@"Start");
      answer = [self sumofMultiples];
-    NSLog(@"Sum %i", answer);
+    NSLog(@"Problem 1 :  %i", answer);
+    answer = [self problemtwo];
+    NSLog(@"Problem 2 : %i", answer);
+    
     NSLog(@"Finished");
     
     
@@ -94,6 +97,26 @@
     return sum;
 
 }
+
+- (int) problemtwo{
+    int c = 0;
+    int d = 0;
+    //int indicator = 0;
+    for (int i =0; i<9; i++) {
+        c = c + i;
+       NSLog(@"f number %i",c);
+        if (c%2 == 0) {
+            d = d + c;
+            //NSLog(@"even  numbers %i",d);
+
+        }
+    }
+    return d;
+    
+}
+
+
+
 
 
 //-  (IBAction)additionofMultiplesupto: (UITextField *) inputone{
