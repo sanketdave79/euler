@@ -10,4 +10,15 @@
 
 @interface SDViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *goone;
+
+
+@property (weak, nonatomic) IBOutlet UITextField *inputone;
+
+@property (weak, nonatomic) IBOutlet UILabel *outputone;
+
+//- (IBAction)additionofMultiplesupto: (UITextField *) inputone;
+
+- (NSMutableArray *) arrayofMultiples;
+- (int) sumofMultiples;
 @end
