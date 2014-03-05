@@ -22,4 +22,5 @@
 - (NSMutableArray *) arrayofMultiples;
 - (int) sumofMultiples;
 - (int) problemtwo;
+- (int) problemthree;
 @end

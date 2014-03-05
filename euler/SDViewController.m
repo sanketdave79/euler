@@ -100,20 +100,40 @@
 
 - (int) problemtwo{
     int c = 0;
-    int d = 0;
+    int d = 1;
+    int i = 2;
+    int evenumber = 0;
     //int indicator = 0;
-    for (int i =0; i<9; i++) {
-        c = c + i;
-       NSLog(@"f number %i",c);
-        if (c%2 == 0) {
-            d = d + c;
-            //NSLog(@"even  numbers %i",d);
-
+    for (i =2; i<=4000000; i++) {
+        i = i - 1;
+        c = i + d; // when i = 1 , c = 3
+             NSLog(@"%i",c);
+           d = i + c; // hen i = 1 , d = 5
+             NSLog(@"%i",d);
+           i = c + d; // New number i will 8
+            NSLog(@" %i",i);
+        
+        if (i%2 == 0) {
+            evenumber = i + evenumber;
         }
-    }
-    return d;
+        if (c%2 == 0) {
+            evenumber = c + evenumber;
+        }
+        if (d%2 == 0) {
+            evenumber = d + evenumber;
+        }
+       
+       
+          }
+    return evenumber;
     
 }
+- (int) problemthree
+{
+    return 0;
+}
+
+
 
 
 
