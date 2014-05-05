@@ -10,8 +10,9 @@
 
 @interface SDViewController ()
 {
-    NSMutableArray *multiples, *arrayofmultiples;
+    NSMutableArray *multiples, *arrayofmultiples ,*factors;
     
+    BOOL isprimenumber;
     
 }
 @end
@@ -21,18 +22,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    multiples = [[NSMutableArray alloc] init];
-    arrayofmultiples = [[NSMutableArray alloc] init];
     
-    int answer;
-    NSLog(@"Start");
-     answer = [self sumofMultiples];
-    NSLog(@"Problem 1 :  %i", answer);
-    answer = [self problemtwo];
-    NSLog(@"Problem 2 : %i", answer);
+
+    //multiples = [[NSMutableArray alloc] init];
+    //arrayofmultiples = [[NSMutableArray alloc] init];
+    //factors = [[NSMutableArray alloc] init];
     
-    NSLog(@"Finished");
+    //int answer;
+    //NSLog(@"Start");
+     //answer = [self sumofMultiples];
+    //NSLog(@"Problem 1 :  %i", answer);
+    //answer = [self problemtwo];
+    //NSLog(@"Problem 2 : %i", answer);
     
+   
+  
+   //long long a = [self problemthree];
+   
+    
+//NSLog(@"Problem 3 : %lld", a);
+    
+  //  NSLog(@"Finished");
+    
+    
+    long long number = 600851475143;
+    NSLog(@"Highest Prime factor of: %lli is %lli", number, [self highestPrimeFactorOf: number]);
+  
     
   
 	// Do any additional setup after loading the view, typically from a nib.
@@ -84,18 +99,44 @@
     
     for (start = 0; start < count; start++){
         
-        if (start == 0) {
-            sum = [[arrayofmultiples objectAtIndex:start] integerValue];
-        }
-        else{
-            sum = sum + [[arrayofmultiples objectAtIndex:start] integerValue];
-        }
+        if (start == 0) { sum = [[arrayofmultiples objectAtIndex:start] integerValue];}
+        else{sum = sum + [[arrayofmultiples objectAtIndex:start] integerValue];}
     }
     
    
     
     return sum;
 
+}
+
+- (int) sumofMultiples2
+{
+    
+    arrayofmultiples = [self arrayofMultiples];
+    
+    int count = [arrayofmultiples count];
+    int start = 0;
+    int sum = 0;
+    
+    
+    for (start = 0; start < count; start++)
+    {
+        
+        if (start == 0)
+        {
+            sum = [[arrayofmultiples objectAtIndex:start] integerValue];
+        }
+        else
+        {
+            sum = sum + [[arrayofmultiples
+                          objectAtIndex:start] integerValue];
+        }
+    }
+    
+    
+    
+    return sum;
+    
 }
 
 - (int) problemtwo{
@@ -128,9 +169,91 @@
     return evenumber;
     
 }
-- (int) problemthree
+- (long long) problemthree
 {
-    return 0;
+    
+    // Better way of finding factors of big number is using gnfs algorithm
+    
+    //long long number = 600851475143;
+    long long number = ceill(9 / 2);
+    long long answerforthree = 0;
+    NSLog(@"Number is: %lli", number);
+    for (long long i = 2; i<= number; i++)
+    {
+        if (number%i == 0)
+        {
+           // NSLog(@"Factor of %d - %d", number, i);
+            
+            // There are two checks required , 1) is if number is a factor or not ?  2) is if number is a prime or not ?
+            
+           
+            //long long itcanbeprime = 0;
+            BOOL isAPrime = YES;
+            
+            for (long long x = 2; x<i; x++)
+            {
+                if (i%x == 0)
+                {
+                   // NSLog(@"%d definetly Not a prime : %d !!! ", i,x);
+                    //itsnotaprime++;
+                    isAPrime = NO;
+                    break;
+                }
+               
+            }
+            
+            if ( isAPrime )
+            {
+                if (i>answerforthree)
+                {
+                    answerforthree = i;
+                }
+               // NSLog(@"%lld is a Prime Factor",i);
+            }
+            
+        }
+    }
+    
+        
+    return answerforthree;
+    
+    
+}
+
+
+-(long long)highestPrimeFactorOf:(long long)numberToCheck
+{
+    long long highestPrimeFactor = 0;
+    for(long long i=2; i< numberToCheck; i++)
+    {
+        if(i > (numberToCheck / 2))
+            break;
+        
+        //check if factor
+        if(numberToCheck%i == 0) //if i is a factor
+        {
+            //go ahead and check if prime
+            BOOL iIsPrime = YES;
+            for(long long y=2; y<i; y++)
+            {
+                if(y > (numberToCheck / 2))
+                    break;
+                
+                if(i%y == 0)
+                {
+                    iIsPrime = NO;
+                    break;
+                }
+            }
+            
+            if(iIsPrime && i > highestPrimeFactor)
+            {
+                highestPrimeFactor = i;
+            }
+        }
+    }
+    
+    return highestPrimeFactor;
 }
 
 
